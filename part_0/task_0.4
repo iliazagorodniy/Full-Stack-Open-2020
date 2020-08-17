@@ -1,0 +1,60 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+note over browser:
+    после отправки формы
+    браузер отправляет 
+    запрос к серверу по адресу:  
+    "/new_note" 
+end note
+
+server-->browser: HTTP 302. Redirect to "https://fullstack-exampleapp.herokuapp.com/notes" 
+note over server:
+    Сервер выполняет код в файле "new_note", 
+    и отвечает со статусом HTTP 302.
+    Это редирект, дающий команду браузеру
+    сделать новый GET запрос к серверу и
+    перенаправить нас по адресу "notes" 
+    который берется в заголовке ответа Location
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+note over browser:
+    Браузер, получив ответ от сервера, 
+    выполняет редирект, совершает GET-запрос
+    к серверу, чтобы получить файл notes
+end note
+
+server-->browser: HTML-code
+note over server:
+    Сервер успешно обрабатывает запрос,
+    отвечает со статусом HTTP 200(ОК)
+    и отдает браузеру HTML-страницу notes
+end note
+
+note over browser:
+    Браузер читает HTML-код
+    и делает запросы на сервер,
+    чтобы получить файлы CSS и JS,
+    указанные в коде разметки
+end note
+
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: main.js
+
+note over browser:
+    Браузер, получив js-файл начинает его
+    выполнять и делает запрос к серверу,
+    чтобы получить файл data.json 
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+    После получения файла data.json,
+    браузер запускает обработчик события
+    и рендерит данные на экран
+end note
