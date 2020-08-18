@@ -1,0 +1,43 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/spa
+note over browser:
+    Мы переходим на SPA версию
+    страницы в первый раз,
+    браузер делает POST запрос,
+    чтобы получить HTML-код
+end note
+
+server-->browser: HTML-code
+note over server:
+    Сервер успешно обрабатывает запрос,
+    отвечает со статусом HTTP 200(ОК)
+    и отдает браузеру HTML-страницу notes
+end note
+
+note over browser:
+    Браузер читает HTML-код
+    и делает запросы на сервер,
+    чтобы получить файлы CSS и JS,
+    указанные в коде разметки
+end note
+
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server-->browser: spa.js
+
+note over browser:
+    Браузер, получив js-файл начинает его
+    выполнять и делает запрос к серверу,
+    чтобы получить файл data.json 
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+    После получения файла data.json,
+    браузер запускает обработчик события
+    и рендерит данные на экран
+end note
