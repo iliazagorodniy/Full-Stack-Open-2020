@@ -1,0 +1,16 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over browser:
+    Браузер делает запрос с заголовком
+    Content-Type: application/json
+    После того как мы нажимаем на
+    кнопку submit. Это событие 
+    перехватывается и исполняется 
+    исключительно засчет js-кода
+        
+end note
+
+server-->browser: Responds with HTTP status code 201
+note over server:
+    Сервер успешно обрабатывает запрос,
+    отвечает со статусом HTTP 201(Created)
+end note
