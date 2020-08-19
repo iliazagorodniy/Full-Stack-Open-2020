@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dd04d15-727e-42cf-bfb9-300bb3ecbccb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part_1/courseinfo/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/courseinfo/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597829370134</updated>
-      <workItem from="1597829372689" duration="4471000" />
+      <workItem from="1597829372689" duration="8519000" />
     </task>
     <servers />
   </component>
@@ -93,5 +94,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1729" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597832790289" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1597843615735">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597843615735" />
   </component>
 </project>
