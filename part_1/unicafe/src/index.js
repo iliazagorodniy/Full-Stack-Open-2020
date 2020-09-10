@@ -36,29 +36,32 @@ function Button(props) {
 
 function SingleStatItem(props) {
     const {name, value} = props;
-
     return (
-        <p>{name} {value}</p>
+        <tr>
+            <td>{name}</td><td>{value}</td>
+        </tr>
     )
 }
 
 function FeedbackStats(props) {
     const {good, neutral, bad} = props
     const all = good + neutral + bad
-    const average = (good - bad) / all
-    const positive = good / all * 100 + "%"
+    const average = Math.floor((good - bad) / all * 10) / 10
+    const positive = Math.floor(good / all * 100 * 10) / 10 + "%"
 
     const result = (all === 0)
         ? <p>No feedback given</p>
         : (
-            <div>
-                <SingleStatItem name={"good"} value={good} />
-                <SingleStatItem name={"neutral"} value={neutral} />
-                <SingleStatItem name={"bad"} value={bad} />
-                <SingleStatItem name={"all"} value={all} />
-                <SingleStatItem name={"average"} value={average} />
-                <SingleStatItem name={"positive"} value={positive} />
-            </div>
+            <table>
+                <tbody>
+                    <SingleStatItem name={"good"} value={good} />
+                    <SingleStatItem name={"neutral"} value={neutral} />
+                    <SingleStatItem name={"bad"} value={bad} />
+                    <SingleStatItem name={"all"} value={all} />
+                    <SingleStatItem name={"average"} value={average} />
+                    <SingleStatItem name={"positive"} value={positive} />
+                </tbody>
+            </table>
         )
     return result;
 }
