@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0dd04d15-727e-42cf-bfb9-300bb3ecbccb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/courseinfo/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/courseinfo/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part_1/unicafe/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/unicafe/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part_1/unicafe/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/unicafe/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/part_1/courseinfo/src/index.js" working-dir="$PROJECT_DIR$/part_1/courseinfo/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\IliaPastushkov\AppData\Roaming\Subversion</configuration>
   </component>
@@ -68,6 +79,7 @@
       <workItem from="1597847399255" duration="709000" />
       <workItem from="1597909171214" duration="45000" />
       <workItem from="1597909223889" duration="3747000" />
+      <workItem from="1599723700260" duration="11617000" />
     </task>
     <servers />
   </component>
@@ -90,6 +102,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1256" height="400" key="GridCell.Tab.0.bottom" timestamp="1599723944983">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1256" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599723944983" />
+    <state width="1256" height="400" key="GridCell.Tab.0.center" timestamp="1599723944982">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1256" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599723944982" />
+    <state width="1256" height="400" key="GridCell.Tab.0.left" timestamp="1599723944982">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1256" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599723944982" />
+    <state width="1256" height="400" key="GridCell.Tab.0.right" timestamp="1599723944982">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1256" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599723944982" />
     <state x="215" y="204" key="SettingsEditor" timestamp="1597830982335">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
